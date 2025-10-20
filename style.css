@@ -1,0 +1,136 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.latestblogssection{
+    width: 60%;
+}
+
+.latestblogsheading{
+    text-transform: uppercase;
+    /* opacity: 0.9; */
+    border-top: 1px solid #d5d3d3;
+    margin-top: 50px;
+    font-weight: 200;
+}
+.popularnowsection{
+    width: 30%;
+    margin-top: 50px;
+    
+}
+.popularnewsbox{
+    margin-top: 20px;
+    border: 1px solid rgb(202, 202, 202);
+}
+.popularimagebox{
+    width: 100%;
+    border: 1px solid rgb(196, 194, 194);
+    padding: 5px;
+}
+.emailinputplaxeholder{
+    border-radius: 5px;
+    padding:0px 5px;
+    width: 100%;
+    border: 1px solid rgb(180, 179, 179);
+    transition: all 0.2s ease-in-out;
+}
+.emailinputplaxeholder:focus{
+    outline: none;
+    border: 1px solid #9a060b;}
+.popularnewsheader{
+    width: 100%;
+    text-transform: uppercase;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    /* border-bottom: 1px solid rgb(202, 202, 202); */
+}
+.popularnewsunorderedlist{
+    list-style: none;
+    padding: 0%;
+}
+.popularimagebox img{
+    width: 100%;
+    object-fit: fill;
+}
+.popularnews{
+    display: flex;
+    justify-content: space-between;
+}
+.popularnewslistitem{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0px 10px ;
+}
+.popularnewsitemnumber{
+    width: 20%;
+    text-align:start;
+    display: flex;
+    justify-content:left;
+    align-items: start;
+    font-size: 50px;
+    height: 100%;
+    color: #B5050A;
+}
+.popularnewsitemnumber span{
+    top: 0;
+    height: 100%;
+    font-weight: 700;
+    font-style: italic;
+}
+.popularnewsitemcontent{
+    width: 80%;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 700;
+}
+.signupsection{
+    border: 1px solid rgb(219, 215, 215);
+    padding: 10px;
+    margin: 10px 0px;
+}
+.emailinputbox{
+    margin: 10px 0px;;
+}
+.header{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+}
+.signupbuttonbox{
+    background-color: #B5050A;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0px;
+}
+.signupbuttonbox:hover{
+    background-color:#9a060b;
+}
+
+.signupbtn{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    
+}
+.footersociallinks{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding: 0px 10px;
+    font-size: 20px;
+    
+}
+.footersociallinks a{
+    text-decoration: none;
+    color: black;
+    padding: 0px 3px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 50%;
+}
+.footersociallinks a:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
