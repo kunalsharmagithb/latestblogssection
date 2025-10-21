@@ -11,7 +11,7 @@
     font-weight: 200;
 }
 .popularnowsection{
-    width: 30%;
+    width: 25%;
     margin-top: 50px;
     
 }
@@ -134,3 +134,42 @@
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
 }
+.newscardbody{
+    display: flex;
+    gap: 20px;
+}
+.newscardunorderedlist{
+    list-style: none;
+    padding: 0px;
+}
+.newscardslistbox{
+    /* margin-top: 20px; */
+    padding: 20px 10px;
+}
+.newscardimagebox{
+    height: 130px;
+    width: 150px;
+}
+.newscardimagebox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.newscardtitle{
+    font-weight: 800;
+    font-size: 15px;
+    }
+    .readmoreofnewsacard a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: red;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .newscardcontentbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 130px;
+
+    }
