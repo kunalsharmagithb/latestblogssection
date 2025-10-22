@@ -1,6 +1,6 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 .latestblogssection{
-    width: 60%;
+    width: 75%;
 }
 
 .latestblogsheading{
@@ -11,7 +11,7 @@
     font-weight: 200;
 }
 .popularnowsection{
-    width: 25%;
+    width: 22%;
     margin-top: 50px;
     
 }
@@ -24,14 +24,18 @@
     border: 1px solid rgb(196, 194, 194);
     padding: 5px;
 }
-.emailinputplaxeholder{
+.emailinputplaceholder{
     border-radius: 5px;
-    padding:0px 5px;
+    padding:5px 5px;
     width: 100%;
     border: 1px solid rgb(180, 179, 179);
     transition: all 0.2s ease-in-out;
 }
-.emailinputplaxeholder:focus{
+.emailinputplaceholder::placeholder{
+    font-weight: 500;
+    font-size: 15px;
+}
+.emailinputplaceholder:focus{
     outline: none;
     border: 1px solid #9a060b;}
 .popularnewsheader{
@@ -89,7 +93,8 @@
     margin: 10px 0px;
 }
 .emailinputbox{
-    margin: 10px 0px;;
+    margin: 10px 0px;
+    
 }
 .header{
     text-align: center;
@@ -98,14 +103,15 @@
     font-weight: 600;
 }
 .signupbuttonbox{
-    background-color: #B5050A;
+    background-color: #E62323;
     text-align: center;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px 5px;
     margin: 10px 0px;
+    transition: all 0.2s ease-in-out;
 }
 .signupbuttonbox:hover{
-    background-color:#9a060b;
+    background-color:#b61b1b;
 }
 
 .signupbtn{
@@ -117,18 +123,24 @@
 }
 .footersociallinks{
     display: flex;
-    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
     margin-top: 10px;
     padding: 0px 10px;
-    font-size: 20px;
+    font-size: 25px;
     
 }
 .footersociallinks a{
+    width: 37px;
     text-decoration: none;
     color: black;
     padding: 0px 3px;
-    border: 1px solid rgb(204, 204, 204);
-    border-radius: 50%;
+    border: 1px solid rgb(229, 226, 226);
+    border-radius: 70%;
+    display: flex;
+     align-items: center;
+    justify-content: center;
 }
 .footersociallinks a:hover{
     transform: scale(1.1);
@@ -136,20 +148,43 @@
 }
 .newscardbody{
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    
 }
 .newscardunorderedlist{
     list-style: none;
     padding: 0px;
 }
+.newscardlistitem{
+    /* width: 100%; */
+    margin: 30px 0px;
+    border: 1px solid rgb(232, 232, 232);
+}
 .newscardslistbox{
-    /* margin-top: 20px; */
-    padding: 20px 10px;
+    margin-top: 20px;
+    padding: 10px 10px;
+    display: flex;
+    padding-bottom: 0px;
+}
+.newscardlistitem:hover .newscardimagebox img{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
 }
 .newscardimagebox{
-    height: 130px;
-    width: 150px;
+    width:30% !important;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
 }
+.newscardimagebox::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0,0,0,0.1);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
 .newscardimagebox img{
     width: 100%;
     height: 100%;
@@ -159,17 +194,17 @@
     font-weight: 800;
     font-size: 15px;
     }
-    .readmoreofnewsacard a{
-        text-transform: uppercase;
-        text-decoration: none;
-        color: red;
-        font-size: 12px;
-        font-weight: 700;
-    }
-    .newscardcontentbox{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 130px;
-
-    }
+.readmoreofnewsacard a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: red;
+    font-size: 12px;
+    font-weight: 700;
+}
+.newscardcontentbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width :70%;
+    padding:5px 0px;
+}
